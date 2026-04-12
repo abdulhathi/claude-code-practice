@@ -2,11 +2,14 @@
 
 ## Phase 1 — Project Setup & Infrastructure
 
+### Part 1 — Scaffolding & Database
 1. Initialize monorepo structure (`/client` and `/server` directories)
 2. Set up Vite + React + TypeScript project in `/client`
 3. Set up Node.js + Express + TypeScript project in `/server`
-4. Configure Tailwind CSS in the client
-5. Set up PostgreSQL database (local dev + hosted)
+4. Set up PostgreSQL database (local dev + hosted)
+
+### Part 2 — Tooling & Configuration
+5. Configure Tailwind CSS in the client
 6. Initialize Prisma and connect to PostgreSQL
 7. Configure ESLint and Prettier across both projects
 
