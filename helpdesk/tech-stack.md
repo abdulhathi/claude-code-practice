@@ -1,26 +1,27 @@
 # Tech Stack
 
 ## Frontend
-- **Next.js (App Router)** — full-stack React framework; handles routing, SSR, and API routes in one project
-- **Tailwind CSS** — utility-first styling for the dashboard UI
-- **shadcn/ui** — pre-built accessible components (tables, modals, forms)
+- **React + TypeScript** — component-based UI with type safety
+- **React Router v7** — client-side routing and navigation
+- **Tailwind CSS** — utility-first styling
 
-## Backend / API
-- **Next.js API Routes** — unified full-stack; no separate server needed at this scale
-- **Prisma** — type-safe ORM with schema migrations
+## Backend
+- **Node.js + Express** — REST API server
+- **Prisma** — type-safe ORM for database access and migrations
 
 ## Database
-- **PostgreSQL** — relational DB for structured ticket/user/category data; hosted on **Supabase**
+- **PostgreSQL** — relational DB for tickets, users, sessions, and categories
 
-## Auth
-- **Database sessions** — session tokens stored in PostgreSQL, looked up on each request; no JWTs
-- Session management handled manually via Prisma (sessions table with userId, token, expiresAt)
+## Authentication
+- **Database sessions** — sessions stored in PostgreSQL; Express middleware validates session tokens on each request
+- No third-party auth provider
 
 ## AI
-- **Anthropic Claude API** (`claude-sonnet-4-6`) — ticket classification, AI summaries, suggested replies, knowledge base responses
+- **Anthropic Claude API** (`claude-sonnet-4-6`) — ticket classification, AI summaries, suggested replies, and knowledge base responses
 
 ## Email Ingestion
-- **Resend** (inbound email webhooks) or **SendGrid Inbound Parse** — receives support emails and creates tickets via webhook
+- **SendGrid Inbound Parse** — receives support emails via webhook and creates tickets
 
 ## Deployment
-- **Vercel** — native Next.js deployment, zero-config
+- **Frontend** — Vite build, served as static assets (e.g. Vercel or Nginx)
+- **Backend** — Node.js server (e.g. Railway or Render)

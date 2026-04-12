@@ -7,4 +7,7 @@
   - The system should be deploye to admin. The admin can create additional agents.
 3. Define the MVP (Minimum viable product)
 4. Choose the tech stack
+   1. Use the database session for authentication
+   2. Save those technical stack in to tech-stack.md file
 5. Create the implementation plan
+   1. create an implementation plan. Break the project into tasks and group them in to phases.
