@@ -3,10 +3,10 @@
 ## Phase 1 — Project Setup & Infrastructure
 
 ### Part 1 — Scaffolding & Database
-1. Initialize monorepo structure (`/client` and `/server` directories)
-2. Set up Vite + React + TypeScript project in `/client`
-3. Set up Node.js + Express + TypeScript project in `/server`
-4. Set up PostgreSQL database (local dev + hosted)
+1. Initialize monorepo structure with a root `package.json` using Bun workspaces (`client`, `server`)
+2. Set up Vite + React + TypeScript project in `/client` using `bun create vite`
+3. Set up Bun + Express + TypeScript project in `/server` using `bun init`
+4. Set up PostgreSQL database (local dev + hosted), add `.env.example`
 
 ### Part 2 — Tooling & Configuration
 5. Configure Tailwind CSS in the client

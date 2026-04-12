@@ -6,7 +6,8 @@
 - **Tailwind CSS** — utility-first styling
 
 ## Backend
-- **Node.js + Express** — REST API server
+- **Bun** — JavaScript runtime and package manager (replaces Node.js + npm)
+- **Express** — REST API server (runs natively on Bun, no build step needed)
 - **Prisma** — type-safe ORM for database access and migrations
 
 ## Database
