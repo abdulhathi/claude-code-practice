@@ -12,3 +12,12 @@
 5. Create the implementation plan
    1. create an implementation plan. Break the project into tasks and group them in to phases.
 6. Setting up the project
+   1. Run the both client and server at the same time using bun.
+7. Setting up the postgres
+   1. Install postgres
+8. Setting up the prisma
+   1. "Setup the prisma with postgres. Connect the app to helpdesk database."
+9. Setting up the push notification.
+10. Setting up the better auth for (authentication).
+    1.  Add the betterauth skill
+    2.  "setup better auth with email/password and use the database sessions. Bare minimum. No UI. Ask me any clarification questions"
