@@ -15,7 +15,7 @@ app.get("/api/me", requireAuth, (req, res) => {
   res.json(res.locals.session);
 });
 
-app.get("/health", async (_req, res) => {
+app.get("/api/health", async (_req, res) => {
   await prisma.$queryRaw`SELECT 1`;
   res.json({ status: "ok", db: "connected" });
 });
