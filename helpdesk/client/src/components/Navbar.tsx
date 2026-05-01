@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext'
 export function Navbar() {
   const { session, signOut } = useAuth()
   const user = session?.user
-  const isAdmin = (user as { role?: string } | undefined)?.role === 'admin'
+  const isAdmin = (user as { role?: string } | undefined)?.role === 'ADMIN'
 
   return (
     <nav className="bg-gray-100 border-b border-gray-200 px-6 py-3 flex items-center justify-between">
