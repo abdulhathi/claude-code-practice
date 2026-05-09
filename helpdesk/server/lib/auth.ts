@@ -11,4 +11,12 @@ export const auth = betterAuth({
       role: { type: "string", input: false },
     },
   },
+  rateLimit: {
+    enabled: true,
+    window: 60,
+    max: 100,
+    customRules: {
+      "/sign-in/email": { window: 60, max: 5 },
+    },
+  },
 });
